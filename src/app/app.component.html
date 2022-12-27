@@ -1,0 +1,31 @@
+<mat-toolbar color="primary">
+  <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <span>My App</span>
+  <span class="example-spacer"></span>
+
+  <button mat-button [matMenuTriggerFor]="menu">Saprapu Krishna</button>
+<mat-menu #menu="matMenu">
+  <button mat-menu-item>Profile</button>
+  <button mat-menu-item>Orders</button>
+  <button mat-menu-item>Change Password</button>
+  <button mat-menu-item>Logout</button>
+</mat-menu>
+
+  <div class="demo-section">
+
+    <mat-icon matBadge="15" matBadgeColor="warn">shopping_cart</mat-icon>
+      <!-- Include text description of the icon's meaning for screen-readers -->
+      <span class="cdk-visually-hidden">
+        Example with a home icon with overlaid badge showing the number 15
+      </span>
+      Cart
+  </div>
+</mat-toolbar>
+<!-- <app-header></app-header>
+<app-main-menu></app-main-menu> -->
+<div class="container-fluid">
+  <router-outlet></router-outlet>
+</div>
+<!-- <app-cart-summary-page></app-cart-summary-page> -->
